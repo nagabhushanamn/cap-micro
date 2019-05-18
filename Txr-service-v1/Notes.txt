@@ -1,0 +1,20 @@
+
+
+
+Txr-service
+-------------
+
+
+model:
+	
+	    - Customer 
+		- Account
+		- Txn
+		
+Layer(s)
+
+		- data/repository layer  ==> persisting logic
+		- business/service layer ==> processing logic	
+		- web layer              ==> req & response logic
+		
+			
