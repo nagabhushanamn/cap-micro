@@ -1,0 +1,11 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.custom.config.CustomAutoConfiguration",
+      "name": "custom",
+      "type": "com.custom.config.CustomAutoConfiguration"
+    }
+  ],
+  "properties": []
+}
