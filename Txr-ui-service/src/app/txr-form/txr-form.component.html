@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-sm-6 col-md-6">
 
+    <div class="alert alert-info">{{status}}</div>
     <div class="card">
       <div class="card-header">Txr Form</div>
       <div class="card-body">
-
         <form [formGroup]="txrForm" (submit)="handleSubmit()">
           <div class="form-group">
             <label>From</label>
@@ -22,6 +22,6 @@
         </form>
       </div>
     </div>
-    <div class="alert alert-info">{{status}}</div>
+
   </div>
 </div>
