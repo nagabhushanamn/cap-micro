@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-sm-6 col-md-6">
+
+    <div class="card">
+      <div class="card-header">Txr Form</div>
+      <div class="card-body">
+
+        <table class="table table-sm table-bordered">
+          <tr *ngFor="let txn of txns">
+            <td>{{txn.id}}</td>
+            <td>{{txn.date| date:'yyyy/MM/dd hh:mm'}}</td>
+            <td>{{txn.amount|currency:'INR'}}</td>
+            <td>{{txn.closingBalance|currency:'INR'}}</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>

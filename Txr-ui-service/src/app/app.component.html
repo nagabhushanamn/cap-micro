@@ -1,11 +1,18 @@
-
-
 <div class="container">
 
-  <hr/>
-  <h1>Txr Ui service</h1>
-  <hr/>
+  <hr />
+  <h1>Txr UU service</h1>
+  <hr />
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['txr']">Txr</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['txns']">Txns</a>
+    </li>
+  </ul>
+  <hr />
 
-  <app-txr-form></app-txr-form>
+  <router-outlet></router-outlet>
 
 </div>
