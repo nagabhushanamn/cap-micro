@@ -16,7 +16,7 @@ public class App {
 	public static void main(String[] args) {
 
 		// by 'third-party' | ' component manager' | 'container' | 'context'
-
+ 
 		// init / boot
 		System.out.println("--------------------");
 
