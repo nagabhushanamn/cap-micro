@@ -4,29 +4,20 @@ import java.io.Serializable;
 
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Nag")
 public class ItemLine implements Serializable {
-
-	public ItemLine(int productId, int qty) {
-		super();
-		this.productId = productId;
-		this.qty = qty;
-	}
 
 	public ItemLine() {
 	}
-	
-	private int productId;
-	private int qty;
-	
-	
 
-	public int getProductId() {
-		return productId;
+	private Item item;
+	private int qty;
+
+	public Item getItem() {
+		return item;
 	}
 
-	public void setProductId(int productId) {
-		this.productId = productId;
+	public void setItem(Item item) {
+		this.item = item;
 	}
 
 	public int getQty() {
@@ -39,6 +30,7 @@ public class ItemLine implements Serializable {
 
 	@Override
 	public String toString() {
-		return "ItemLine [productId=" + productId + ", qty=" + qty + "]";
+		return "ItemLine [item=" + item + ", qty=" + qty + "]";
 	}
+
 }
