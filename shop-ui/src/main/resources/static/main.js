@@ -851,13 +851,13 @@ var ProductService = /** @class */ (function () {
         this.httpClient = httpClient;
     }
     ProductService.prototype.getAllProducts = function () {
-        var appiUrl = "http://0.0.0.0:8181/api/products";
+        var appiUrl = "http://localhost:8181/api/products";
         var promise = fetch(appiUrl);
         return promise.then(function (response) { return response.json(); });
         // return this.httpClient.get(appiUrl).toPromise()
     };
     ProductService.prototype.getAllReviews = function (productId) {
-        var appiUrl = "http://0.0.0.0:8181/api/products/" + productId + "/reviews";
+        var appiUrl = "http://localhost:8181/api/products/" + productId + "/reviews";
         return fetch(appiUrl).then(function (response) { return response.json(); });
         // return this.httpClient.get(appiUrl).toPromise()
     };
@@ -1128,7 +1128,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nag-training/git/cap-micro/shop-web-ui/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/nag-training/git/cap-micro/NG-shop-ui/src/main.ts */"./src/main.ts");
 
 
 /***/ })

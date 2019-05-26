@@ -982,7 +982,7 @@ __webpack_require__.r(__webpack_exports__);
 var ProductsService = /** @class */ (function () {
     function ProductsService(_http) {
         this._http = _http;
-        this.apiUrl = "http://0.0.0.0:8181/api/products";
+        this.apiUrl = "http://localhost:8181/api/products";
     }
     ProductsService.prototype.loadProducts = function () {
         // return [
@@ -1140,7 +1140,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nag-training/git/cap-micro/PM/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/nag-training/git/cap-micro/NG-PM/src/main.ts */"./src/main.ts");
 
 
 /***/ })

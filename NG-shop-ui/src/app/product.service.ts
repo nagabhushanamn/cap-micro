@@ -9,13 +9,13 @@ export class ProductService {
   constructor(private httpClient: HttpClient) { }
 
   getAllProducts() {
-    let appiUrl = "http://0.0.0.0:8181/api/products";
+    let appiUrl = "http://localhost:8181/api/products";
     let promise = fetch(appiUrl);
     return promise.then(response => response.json())
     // return this.httpClient.get(appiUrl).toPromise()
   }
   getAllReviews(productId) {
-    let appiUrl = `http://0.0.0.0:8181/api/products/${productId}/reviews`;
+    let appiUrl = `http://localhost:8181/api/products/${productId}/reviews`;
     return fetch(appiUrl).then(response => response.json())
     // return this.httpClient.get(appiUrl).toPromise()
   }
